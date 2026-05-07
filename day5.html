@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrial Tour Blog | Day 5: Logistics & Supply Chain</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+  <div class="floating-elements">
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+  </div>
+  <div class="cursor"></div>
+
+  <header class="site-header">
+    <div class="decorative-circle"></div>
+    <div class="decorative-circle"></div>
+    <div class="container header-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Industrial Tour Journal</span>
+        <h1 id="hero-title">Industrial Tour Experience</h1>
+        <p id="hero-subtitle">A polished 7-day professional tour blog with photos, insights, and reflections.</p>
+        <div class="hero-meta">
+          <span>7-day report</span>
+          <span>Professional review</span>
+          <span>Industry insights</span>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="day1.html">Day 1</a>
+        <a href="day2.html">Day 2</a>
+        <a href="day3.html">Day 3</a>
+        <a href="day4.html">Day 4</a>
+        <a href="day5.html" class="active">Day 5</a>
+        <a href="day6.html">Day 6</a>
+        <a href="day7.html">Day 7</a>
+      </nav>
+      <button id="profile-button" class="profile-button" aria-label="Open profile login">
+        <span class="profile-icon">👤</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="day-detail-page">
+        <div class="day-hero reveal">
+          <div class="day-hero-content">
+            <span class="day-badge">Day 5</span>
+            <h1 id="day-title">Day 5: Tagaytay Adventure</h1>
+            <p id="day-description">Traveled to Tagaytay to experience scenic views and optional recreational activities. Enjoyed leisure time at Sky Ranch and had the opportunity to relax before the journey back to Manila.</p>
+          </div>
+          <div class="day-hero-image" id="main-day-image">
+            <img src="images/day5.jpg" alt="Day 5: Logistics & Supply Chain" class="hero-image">
+          </div>
+        </div>
+
+        <div class="day-content reveal">
+          <div class="day-highlights">
+            <h2>Daily Agenda - April 9, 2026 (Thursday)</h2>
+            <ul id="day-highlights">
+              <li><strong>6:30 A.M.</strong> - Breakfast @ DJM Dormitory</li>
+              <li><strong>8:00 A.M.</strong> - Proceed to Tagaytay</li>
+              <li><strong>9:30 A.M.</strong> - SKY RANCH (Optional Tour)</li>
+              <li><strong>12:00 N.N.</strong> - Pack Lunch</li>
+              <li><strong>2:30 P.M.</strong> - Back to Manila</li>
+              <li><strong>6:30 P.M.</strong> - Dinner @ DJM Dormitory / Rest</li>
+            </ul>
+          </div>
+
+          <div class="day-gallery-section">
+            <h2>Photo Gallery</h2>
+            <div class="day-gallery-grid" id="day-gallery">
+              <!-- Images will be populated by JavaScript -->
+            </div>
+          </div>
+        </div>
+
+        <div class="day-navigation">
+          <a href="day4.html" class="nav-button back-button">
+            <span>←</span> Previous Day
+          </a>
+          <a href="day6.html" class="nav-button next-button">
+            Next Day <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p id="footer-text">Edit your tour entries inside the editor. Add daily images, update notes, and customize every heading to match your project.</p>
+      <div class="footer-links">
+        <a href="index.html">Back to top</a>
+        <a href="#hero-title">Explore days</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div id="login-modal" class="modal-backdrop hidden" aria-hidden="true">
+    <div class="modal-card">
+      <button id="login-close" class="modal-close" aria-label="Close login modal">×</button>
+      <h2>Editor Access</h2>
+      <form id="login-form">
+        <div class="modal-field">
+          <label for="username">Username</label>
+          <input id="username" type="text" required>
+        </div>
+        <div class="modal-field">
+          <label for="password">Password</label>
+          <input id="password" type="password" required>
+        </div>
+        <button type="submit" id="login-submit" class="button primary">Login</button>
+      </form>
+      <p id="login-error" class="login-error"></p>
+    </div>
+  </div>
+
+  <div id="editor-panel" class="editor-panel hidden" aria-hidden="true">
+    <div class="editor-panel-inner">
+      <div class="editor-header">
+        <h2>Edit Day Content</h2>
+        <button id="close-editor" class="button secondary">Close Editor</button>
+      </div>
+      <div id="editor-form-container">
+        <!-- Editor form will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Modal -->
+  <div id="image-modal" class="modal-backdrop hidden" aria-hidden="true">
+    <div class="image-modal-content">
+      <button id="image-modal-close" class="modal-close" aria-label="Close image modal">×</button>
+      <img id="modal-image" src="" alt="">
+      <div class="image-navigation">
+        <button id="prev-image" class="image-nav-button">‹</button>
+        <span id="image-counter">1 / 1</span>
+        <button id="next-image" class="image-nav-button">›</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
